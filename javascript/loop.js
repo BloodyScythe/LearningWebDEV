@@ -40,7 +40,7 @@ console.log(total); */
 
 // **************callbacks**************
 
-function displayConsole(message){
+/* function displayConsole(message){
 
     console.log(message);
 }
@@ -57,4 +57,25 @@ function setMessage(text, callbacks){
 // for console
 setMessage("hello Mom!",displayConsole);
 //for DOM
-setMessage("hello Mom!",displayDOM);
+setMessage("hello Mom!",displayDOM); */
+
+
+// nested function\
+
+function userLogin(){
+
+    username = "Dhruv";
+    inbox=0;
+    function userID(){
+        console.log("You have ",inbox," Messages");
+    }
+
+    function userInbox(){
+        console.log("Hello ",username," Welcome");
+    }
+    userInbox();
+    userID();
+}
+userLogin();
+
+
