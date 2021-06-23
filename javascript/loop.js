@@ -279,3 +279,14 @@ let word;
 word = letters.reduce((total, nextLetter) => total + nextLetter);
 
 console.log(word); */
+
+//place holders
+
+let fname = "Dhruv";
+let lname = "kaith";
+total = 10;
+tax = 0.05;
+
+
+console.log(`Hello ${fname} ${lname}`);
+console.log(`Your total is $${10}`);
