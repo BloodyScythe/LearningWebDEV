@@ -1,5 +1,5 @@
 @import 'config';
-
+@import 'home';
 body{
     background-color: $primary-color;
     color: #fff;
@@ -37,16 +37,17 @@ main{
 
         a{
             padding: 0.4rem;
-
-        }
-        &:hover{
-            font-size: 1rem;
-            position: fixed;
-            border: 0.4rem;
-            right: 1rem;
-            text-align: right;
-            padding: 1rem;
-            color: #fff;
+            @include transition-ease;
+            &:hover{
+                color: $secondary-color;
+                /*  font-size: 1rem;
+                position: fixed;
+                border: 0.4rem;
+                right: 1rem;
+                text-align: right;
+                padding: 1rem;
+                color: #fff; */
+            }
         }
 
     }
